@@ -1,16 +1,12 @@
 ---
-title: Index page
+title: Test task
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
-
-	
 	{# partial example #}
-	{% include "partials/_header.html" %}
+	{% include "partials/header/_header.html" %}
 
 	{# mixin example #}
 	{{mixins.icon('facebook')}}

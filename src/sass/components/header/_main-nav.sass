@@ -1,0 +1,31 @@
+.main-nav
+    display: inline-block
+    font-size: 18px
+    font-family: Apex-normal, Arial, Helvetica, sans-serif
+    vertical-align: top
+    padding-left: 60px
+
+.main-nav__list
+    margin: 0
+    padding: 0
+
+.main-nav__item
+    list-style: none
+    display: inline-block
+
+.main-nav__item:not(:last-child)
+    margin-right: 44px
+
+.main-nav__link
+    color: inherit
+    text-decoration: none
+    letter-spacing: 1.75px
+
+.main-nav__link:hover
+    text-decoration: underline
+    color: $red
+    will-change: color
+    transition: color .2s ease-in
+
+.main-nav__link:active
+    color: $header-dark
