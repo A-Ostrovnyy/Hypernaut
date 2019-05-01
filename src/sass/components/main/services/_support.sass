@@ -1,0 +1,68 @@
+.support
+    width: 100%
+    display: flex
+    flex-flow: row nowrap
+
+.support__question, .support__partner
+    color: $white
+    text-transform: uppercase
+    font-size: 32px
+    text-decoration: none
+    text-align: center
+    flex: 1
+    padding: 63px 0
+
+.support__question:hover, .support__partner:hover
+    text-decoration: underline
+    color: $red
+    will-change: color
+    transition: color .2s ease-in
+
+.support__question:hover
+    color: $header-dark
+
+.support__question:hover .icon-arrow
+    fill: $header-dark
+    will-change: fill
+    transition: fill .2s ease-in
+
+.support__partner:hover .icon-arrow
+    fill: $red
+    will-change: fill
+    transition: fill .2s ease-in
+
+.support__question::before, .support__partner::before
+    content: ''
+    display: block
+    position: relative
+    top: 26px
+    left: 0
+    width: 95px
+    height: 6px
+    background-color: $white
+
+.support__question::after
+    content: '?'
+    font-size: 257px
+    color: rgba($white, .45)
+    position: absolute
+    top: -80px
+    right: -45px
+    font-family: Apex-medium, Arial, Helvetica, sans-serif
+    font-weight: 500
+
+.support__partner::before
+    background-color: $red
+
+.support__question
+    position: relative
+    background-color: $red-light
+    overflow: hidden
+
+.support__partner
+    background-color: $header-blue
+
+.icon-arrow
+    font-size: 23px
+    fill: $white
+    margin-left: 27px
