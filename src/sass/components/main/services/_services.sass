@@ -1,0 +1,38 @@
+.services
+    position: sticky
+    top: 25px
+
+.services__title
+    text-transform: uppercase
+    font-family: Apex-bold, Arial, Helvetica, sans-serif
+    font-weight: 900
+    font-size: 19px
+    margin-bottom: 30px
+
+.services__item
+    color: $blue
+    font-size: 16px
+    margin-bottom: 30px
+
+.services__link
+    text-decoration: none
+    color: inherit
+
+.services__link:hover
+    text-decoration: underline
+    color: $red
+    will-change: color
+    transition: color .2s ease-in
+
+.services__link--active
+    color: $black
+    position: relative
+
+.services__link--active::before
+    content: ''
+    position: absolute
+    bottom: 2px
+    left: -39px
+    width: 6px
+    height: 22px
+    background-color: $red
