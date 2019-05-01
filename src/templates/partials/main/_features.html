@@ -3,7 +3,7 @@
     {% import "data/_features.html" as data %}
     
     {% for data in data.list %}
-    <div class="features__point">
+    <div class="features__point" id={{data.id}}>
         <p>
             <span class="features__point-bold">
                 {{data.bold}}
