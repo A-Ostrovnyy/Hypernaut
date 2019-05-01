@@ -71,7 +71,7 @@
 .header__contact-block
     display: block
     margin: 0 auto
-    color: inherit
+    color: $white
     text-decoration: none
 
 .header__contact-block:hover
@@ -79,6 +79,10 @@
     color: $red
     will-change: color
     transition: color .2s ease-in
+
+.header__contact-block:hover .icon-envelop
+    fill: $red
+    transition: fill .2s ease-in
 
 .header__contact-block--top
     margin-bottom: 21px

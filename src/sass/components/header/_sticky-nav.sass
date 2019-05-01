@@ -1,0 +1,44 @@
+.sticky-nav
+    position: fixed
+    z-index: 5
+    top: 0
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    flex-flow: row nowrap
+    align-items: center
+    padding: 20px 40px
+    background-color: rgba($dark-blue, .95)
+    transform: translateY(-100%)
+    will-change: transform
+    transition: transform .3s ease-in, opacity .3s ease-in
+    opacity: 0
+
+.sticky-nav--active
+    transform: translateY(0)
+    will-change: transform
+    transition: transform .3s ease-in, opacity .3s ease-in
+    opacity: 1
+
+.sticky-nav .logo
+    width: 40px
+    height: 40px
+    padding: 0 0 0 6px
+    flex-shrink: 0
+
+.sticky-nav .main-nav
+    margin-top: 5px
+    flex: 1
+
+.sticky-nav .header__contact-block
+    color: $white
+    margin-left: auto
+    margin-top: 5px
+    flex-shrink: 0
+    margin-bottom: 0
+
+.sticky-nav .header__contact-block:hover
+    text-decoration: underline
+    color: $red
+    will-change: color
+    transition: color .2s ease-in

@@ -1,3 +1,3 @@
-import sayHello from './lib/sayHello';
+import showStickyNavigation from './lib/sticky-header';
 
-sayHello();
+showStickyNavigation();
