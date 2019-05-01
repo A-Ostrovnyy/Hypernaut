@@ -5,7 +5,7 @@
         <span class="tabs__title-accent">une équipe dédiée,</span> proche de vous
     </h2>
     <div class="tabs__button-wrapper">
-        {% import "data/tabs-button.html" as button %}
+        {% import "data/_tabs-button.html" as button %}
     
         {% for button in button.list %}
             <button class="tabs__button {% if button.active %} {{button.active}} {% endif %}">
@@ -22,7 +22,7 @@
         {% endfor %}
     </div>
     <div class="tabs__content-wrapper">
-        {% import "data/tabs-data.html" as data %}
+        {% import "data/_tabs-data.html" as data %}
     
         {% for data in data.list %}
             <div class="tabs__content {% if data.active %} {{data.active}} {% endif %}">
