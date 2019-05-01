@@ -1,0 +1,93 @@
+.newsletter
+    background-color: $dark-blue
+    color: $white
+    font-family: Apex-medium, Arial, Helvetica, sans-serif
+
+.newsletter__container
+    max-width: 900px
+    margin: 0 auto
+    text-align: center
+    padding: 50px 0 70px
+
+.newsletter__title
+    text-transform: uppercase
+    font-size: 32px
+    line-height: 2
+    margin-bottom: 15px
+
+.newsletter__title .icon-letter
+    fill: $red-light
+    font-size: 48px
+    position: absolute
+    top: 5px
+    left: 145px
+
+.newsletter__text
+    font-size: 19px
+    line-height: 1.68
+    margin-bottom: 30px
+
+.newsletter__form-wrapper
+    max-width: 710px
+    margin: 0 auto
+    height: 50px
+    border-radius: 25px
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+    flex-flow: row nowrap
+
+.newsletter__email, .newsletter__company
+    display: block
+    height: 50px
+    padding: 10px 15px
+    background-color: $white
+    border: none
+    text-align: center
+
+//Placeholders
+.newsletter__email::placeholder, .newsletter__company::placeholder
+    font-size: 16px
+    color: $light-grey
+
+//Dividers between inputs
+.newsletter__email-wrapper, .newsletter__company-wrapper
+    margin-right: 8px
+    flex: 2 0
+
+.newsletter__company, .newsletter__submit
+    margin-left: -25px
+
+.newsletter__submit
+    display: block
+    height: 50px
+    padding: 10px 15px
+    font-size: 16px
+    font-family: Apex-bold, Arial, Helvetica, sans-serif
+    font-weight: 700
+    color: $white
+    text-transform: uppercase
+    background-color: $red
+    border: none
+    box-shadow: unset
+
+//Move input wrappers for round edges
+.newsletter__submit-wrapper, .newsletter__email-wrapper, .newsletter__company-wrapper
+    transform: skewX(-20deg)
+    overflow: hidden
+
+//revert skew() for vertical text
+.newsletter__submit, .newsletter__email, .newsletter__company
+    transform: skewX(20deg)
+    width: 120%
+
+.newsletter__submit-wrapper
+    flex: 1 0
+    min-width: 185px
+    margin-right: -10px
+
+.newsletter__email-wrapper
+    margin-left: -8px
+
+.newsletter__email
+    margin-left: -15px
