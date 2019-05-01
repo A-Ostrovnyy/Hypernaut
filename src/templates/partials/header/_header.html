@@ -1,0 +1,27 @@
+<header class="header">
+    <div class="header__left">
+        {% include "partials/header/_logo.html" %}
+        {% include "partials/header/_main-nav.html" %}
+        <div class="header__promo">
+            <p class="header__promo-text">
+                <span class="header__promo-medium">
+                    Des solutions
+                    <span class="header__promo-red">
+                        sur mesure
+                    </span>
+                </span> 
+                adaptées aux exigences du marché de l’immobilier
+            </p>
+        </div>
+    </div>
+    <div class="header__right">
+        <div class="header__contact">
+            <a href="#" class="header__contact-block header__contact-block--top">
+                Contactez-nous {{mixins.icon('envelop')}}
+            </a>
+            <a href="#" class="header__contact-block header__contact-block--bottom">
+                {{mixins.icon('lock')}} Accès sécurisé compte prescripteurs 
+            </a>
+        </div>
+    </div>
+</header>

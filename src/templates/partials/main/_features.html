@@ -1,0 +1,45 @@
+<div class="features">
+
+    {% import "data/features.html" as data %}
+    
+    {% for data in data.list %}
+    <div class="features__point">
+        <p>
+            <span class="features__point-bold">
+                {{data.bold}}
+            </span>
+            {{data.point}}
+        </p>
+    </div>
+    <p>
+        {{data.text1}}
+    </p>
+
+    <p>
+        {{data.text2}}
+    </p>
+
+
+    {% if data.text3 %}
+        <p>
+            {{data.text3}}
+        </p> 
+    {% endif %}
+
+    {% if data.list %}
+
+    <ul class="features__list">
+
+        {% for item in data.list %}
+
+            <li class="features__item">{{item.item}}</li>
+
+        {% endfor %}    
+
+    </ul>
+
+    {% endif %}
+
+    {% endfor %}
+    
+</div>

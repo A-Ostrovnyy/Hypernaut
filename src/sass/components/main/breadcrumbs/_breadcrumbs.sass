@@ -1,0 +1,36 @@
+.breadcrumbs
+    font-family: Myriad Pro, Arial, Helvetica, sans-serif
+    font-weight: 400
+    font-size: 13px
+    margin-bottom: 35px
+
+.breadcrumbs__container
+    max-width: 900px
+    margin: 0 auto
+    padding: 25px 0
+
+.breadcrumbs__list
+    list-style: none
+
+.breadcrumbs__item
+    display: inline-block
+    color: $blue
+
+.breadcrumbs__item:not(:first-child)
+    margin-left: 10px
+
+.breadcrumbs__item:not(:first-child)::before
+    content: '>'
+    color: inherit
+    font-size: inherit
+    margin-right: 10px
+
+.breadcrumbs__link
+    text-decoration: none
+    color: inherit
+
+.breadcrumbs__link:hover
+    text-decoration: underline
+    color: $red
+    will-change: color
+    transition: color .2s ease-in
